@@ -43,6 +43,7 @@ public class UsuarioDAO {
 		return retorno;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Usuario> getAll(){
 		EntityManager manager = JPAUtils.getFactory().createEntityManager();
 		manager.getTransaction().begin();

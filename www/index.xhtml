@@ -11,5 +11,11 @@
 </h:head>
 <h:body>
 <h1>Inscreva-se aqui...</h1>
+<h:form>
+<h:outputText value="Por favor digite um email para login:"></h:outputText><br>
+<h:inputText value="#{userBean.usuario.email}"></h:inputText><br>
+<h:outputText value="Por favor digite uma senha de acesso:"></h:outputText><br>
+<h:inputText value="#{userBean.usuario.senha}"></h:inputText><br>
+<h:commandButton action="#{userBean.addUser}"></h:commandButton>
 </h:body>
 </html>
